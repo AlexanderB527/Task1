@@ -1,7 +1,4 @@
-def squirrel(N):
-    fact = 1
-    for i in range(1,N+1):
-        fact*=i
-    k=str(fact)[0]
-    z=int(k)
-    return z
+def odometer(args):
+    z=sum(args[:len(args):2])
+    k=sum(args[1:len(args):2])
+    return z,k
